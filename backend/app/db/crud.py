@@ -1,7 +1,7 @@
 from sqlmodel import Session, select
 
-from src.db.db_setup import engine
-from src.db.product import Product, ProductCreate, ProductUpdate
+from app.db.db_setup import engine
+from app.db.product import Product, ProductCreate, ProductUpdate
 
 
 def post_product(session: Session, product: ProductCreate) -> Product:

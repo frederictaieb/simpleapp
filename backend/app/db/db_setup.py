@@ -4,7 +4,7 @@ from typing import Generator
 
 from sqlmodel import Session, SQLModel, create_engine
 
-from src.config import get_settings
+from app.config import get_settings
 
 log = getLogger(__name__)
 basicConfig(level=INFO)

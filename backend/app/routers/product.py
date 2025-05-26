@@ -1,15 +1,15 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlmodel import Session
 
-from src.db.crud import (
+from app.db.crud import (
     delete_product,
     get_all_products,
     get_product,
     post_product,
     update_product,
 )
-from src.db.db_setup import get_session
-from src.db.product import Product, ProductCreate, ProductUpdate
+from app.db.db_setup import get_session
+from app.db.product import Product, ProductCreate, ProductUpdate
 
 router = APIRouter(
     tags=["products"], 

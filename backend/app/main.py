@@ -4,8 +4,8 @@ from typing import AsyncGenerator
 
 from fastapi import FastAPI
 
-from src.db.db_setup import create_db_and_tables
-from src.routers import product
+from app.db.db_setup import create_db_and_tables
+from app.routers import product
 
 logger = getLogger(__name__)
 basicConfig(level=INFO)
